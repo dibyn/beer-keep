@@ -5,7 +5,6 @@ import styled, { ThemeProvider, DefaultTheme } from 'styled-components';
 import GlobalStyle from '../GlobalStyle';
 
 const Container = styled.div`
-  padding: 0 0.5rem;
   height: 100vh;
   min-height: 100vh;
 `;

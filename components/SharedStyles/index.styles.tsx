@@ -1,22 +1,23 @@
 import styled from 'styled-components';
 
 export const Main = styled.main`
+  max-width: 800px;
+  min-width: 450px;
+`;
+export const FlexContainer = styled.div`
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: left;
   align-items: left;
-`;
-export const FlexContainer = styled.div`
-  max-width: 800px;
-  margin: 1rem 1rem 0 1rem
+  margin: 1rem 1rem 0 1rem;
 `;
 export const Card = styled.div`
   display: inline-flex;
-  padding: 2rem;
-  margin-bottom: 2rem;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
   width: 100%;
-  min-width: 300px;
+  min-width: 410px;
   text-decoration: none;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   border-radius: 10px;
