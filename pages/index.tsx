@@ -4,7 +4,7 @@ import { getBeers } from '../api/index.api';
 import RenderBeerList from '../components/pageComponents/RenderBeerList';
 
 const index = memo(() => {
-  const [fetchedNumber, setBeerFetchedNumber] = useState(3);
+  const [fetchedNumber, setBeerFetchedNumber] = useState(7);
   const { data: beerList = [], isLoading } = useQuery(
     ['get-beers', fetchedNumber],
     () => getBeers(fetchedNumber)
@@ -12,7 +12,7 @@ const index = memo(() => {
   const handleLoadMoreImage = useCallback(
     (e: FormEvent) => {
       e.preventDefault();
-      const incremented = fetchedNumber + 2;
+      const incremented = fetchedNumber + 3;
       setBeerFetchedNumber(incremented);
     },
     [fetchedNumber]

@@ -11,6 +11,8 @@ import {
   Main,
   TagLine,
   Title,
+  HeadTitle,
+  Description
 } from '../SharedStyles/index.styles';
 
 const RenderBeerList = ({
@@ -40,7 +42,7 @@ const RenderBeerList = ({
   return (
     <Main>
       <FlexContainer>
-        <h2>Beers</h2>
+        <HeadTitle>Beers</HeadTitle>
         {beerListCopy.map(
           ({ tagline, name, description, image_url, ingredients }) => (
             <Card key={name}>
@@ -59,7 +61,7 @@ const RenderBeerList = ({
               <BeerInfo>
                 <Title>{name}</Title>
                 <TagLine>{tagline}</TagLine>
-                <p>{description}</p>
+                <Description>{description}</Description>
               </BeerInfo>
             </Card>
           )
