@@ -12,7 +12,7 @@ export const FlexContainer = styled.div`
   justify-content: left;
   align-items: left;
   margin: 2rem 1rem 2rem 2rem;
-  @media (max-width: 375px) {
+  @media (max-width: 428px) {
     margin: 1rem;
   }
 `;
@@ -31,7 +31,7 @@ export const Card = styled.div`
   :active {
     background: #f2f8fd;
   }
-  @media (max-width: 375px) {
+  @media (max-width: 428px) {
     padding: 1rem;
   }
 `
@@ -54,33 +54,33 @@ export const BeerImageFrame = styled.div`
     display: block;
   }
   height: 100%;
-  @media (max-width: 375px) {
+  @media (max-width: 428px) {
     padding: 0;
   }
 `;
 export const Image = styled.img`
   height: 165px;
   object-fit: cover;
-  @media (max-width: 375px) {
+  @media (max-width: 428px) {
     height: 100px;
   }
 `;
 export const BeerInfo = styled.div`
   flex: 1 1 auto;
   padding: 0 2rem;
-  @media (max-width: 375px) {
+  @media (max-width: 428px) {
     padding: 0 1rem;
   }
 `;
 export const Title = styled.h1`
   margin-top: 0;
-  @media (max-width: 375px) {
+  @media (max-width: 428px) {
     font-size: 16px;
   }
 `;
 export const TagLine = styled.h3`
   color: #d9a949;
-  @media (max-width: 375px) {
+  @media (max-width: 428px) {
     font-size: 12px;
   }
 `;
@@ -102,7 +102,7 @@ export const Description = styled.p`
   font-size: 1rem;
   color: inherit;
   font-family: inherit;
-  @media (max-width: 375px) {
+  @media (max-width: 428px) {
     font-size: 10px;
   }
 `
